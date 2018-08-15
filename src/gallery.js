@@ -11,11 +11,14 @@ render(){
     let gallery
     if(this.props.data ==null)
         gallery = "<h2>loading....</h2>"
-    else
-        gallery = this.props.data.map((item) =><PictureFrame source={item.source}/>)
-    
+    else{
+        gallery =  "hehe"
+    }
         return(
-            <span>{gallery}</span>
+           
+           <ul>
+              {gallery}
+           </ul>
             
         )
     
