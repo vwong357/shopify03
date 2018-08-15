@@ -49,7 +49,7 @@ componentWillMount(){
         }
         else{
             console.log(this.state.news)
-            response = this.state.news.data.articles.map((item)=><img src={item.urlToImage}></img>)
+            response = this.state.news.data.articles.map((item)=><a src={item.urlToImage}></a>)
         }
       return (
             <h1>{response}</h1>
