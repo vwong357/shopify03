@@ -1,0 +1,42 @@
+
+@import 'colors';
+
+$p-height: 100px;
+
+%equal-heights{
+  display: inline-flex;
+  flex-wrap: none;
+  width:auto;
+   height:150px;
+  
+}
+
+%frame_shared{
+  
+  border: 4px solid $secondary2;
+  padding: 3px;
+  color: darken($secondary3, 10%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:5px;
+}
+
+
+%picture-frame-base{
+    @extend %equal-heights;
+    @extend %frame_shared;
+    background-color: lighten($secondary2, 20%); 
+  }
+
+  .picture-frame{
+    @extend %picture-frame-base;
+  }
+
+  .picture-frame:hover{
+    @extend %picture-frame-base;
+    
+  height: $p-height*1.8;
+  transition: width 300ms ease-out, height 300ms ease-out;
+  }
+
+
+  

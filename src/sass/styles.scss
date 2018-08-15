@@ -1,0 +1,15 @@
+@import 'colors';
+@import 'picture_frame';
+@import 'navigation';
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: $primary0;
+  width:100%;
+  height:100%;
+  margin:0;
+  align-items: center;
+  justify-content: center;
+}
+
+
